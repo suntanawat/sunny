@@ -28,9 +28,9 @@ public class HomeScreen extends UIScreen {
         root=iface.createRoot(
                 AxisLayout.vertical().gap(15),
                 SimpleStyles.newSheet(),layer);
-        root.addStyles(Style.BACKGROUND
-                .is(Background.bordered(0xFFCCCCCC, 0xFF000000, 5)
-                .inset(5, 10)));
+//        root.addStyles(Style.BACKGROUND
+//                .is(Background.bordered(0xFFCCCCCC, 0xFF000000, 5)
+//                .inset(5, 10)));
         root.setSize(width(), height());
         root.add(new Label("ERROR PROGRAM GAMING").addStyles(Style.FONT.is(HomeScreen.TITLE_FONT)));
         root.add(new Button("Satart").onClick(new UnitSlot() {
