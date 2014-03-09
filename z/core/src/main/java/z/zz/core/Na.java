@@ -36,7 +36,7 @@ public class Na extends UIScreen {
         Image bgImage7 = assets().getImage("images/na7.png");
         Image bgImage8 = assets().getImage("images/na8.png");
         int n=rand.nextInt(8)+1;
-        int m=rand.nextInt(10)+5;
+        int m=rand.nextInt(12)+5;
         if(n==1){bgLayer = graphics().createImageLayer(bgImage1);bgLayer.setOrigin(m/2f,m/2f);}
         if(n==2){bgLayer = graphics().createImageLayer(bgImage2);bgLayer.setOrigin(m/2f,m/2f);}
         if(n==3){bgLayer = graphics().createImageLayer(bgImage3);bgLayer.setOrigin(m/2f,m/2f);}

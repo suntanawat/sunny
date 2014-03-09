@@ -11,6 +11,10 @@ import z.zz.sprite.SpriteLoader;
 
 import javax.swing.*;
 
+import static playn.core.PlayN.assets;
+import static playn.core.PlayN.graphics;
+import static z.zz.core.Page2.world;
+
 /**
  * Created by all user on 28/1/2557.
  */
@@ -20,13 +24,13 @@ public class Seelot extends UIScreen {
     private int spriteIndex=0;
     private boolean hasLoaded=false;
 
-
-
     public enum State{IDLE,RUN,ATT};
     private State state = State.IDLE;
+    public enum BulletType{BULLET1,BULLET2,BULLET3,NONE};
+    private BulletType bulletType = BulletType.BULLET1;
     private int e=0,r=0;
     private int offset=0,check=0;
-    Body body;
+
 
     public Seelot(final World world,final float x, final float y)
     {
@@ -35,7 +39,7 @@ public class Seelot extends UIScreen {
             @Override
             public void onSuccess(Sprite result) {
                 sprite.setSprite(spriteIndex);
-                sprite.layer().setOrigin(sprite.width()/2f,sprite.height()/2f);
+                sprite.layer().setOrigin(sprite.width()/2f,sprite.height()/2f-5);
                 sprite.layer().setTranslation(x,y);
 
              //   body=initPhysicsBody(world,Page2.M_PER_PIXEL*x,Page2.M_PER_PIXEL*y);
@@ -75,7 +79,7 @@ public class Seelot extends UIScreen {
         Body body = world.createBody(bf);
         //EdgeShape shape = new EdgeShape();
         PolygonShape shape = new PolygonShape();
-        shape.setAsBox(1f,1f);
+        shape.setAsBox(0.4f,0.4f);
         // body.setFixedRotation(false);
 
         FixtureDef fixtureDef = new FixtureDef();
@@ -97,10 +101,14 @@ public class Seelot extends UIScreen {
         return this.sprite.layer();
     }
 
+
     public void atk(){
         state=State.ATT;
     }
 
+    Bullet1 bullet1;
+    ImageLayer imagelayer;
+    Body body;
 
     public void update(int delta){
         if (!hasLoaded)return;
@@ -111,7 +119,10 @@ public class Seelot extends UIScreen {
 
         if(HP<=0){state=State.ATT;r=0;offset=5;
             if(e>150){
-                if(spriteIndex==9){state=State.IDLE;}
+                if(spriteIndex==9){
+                    state=State.IDLE;
+
+                    }
                 else{
                 spriteIndex=((spriteIndex+1));
                 sprite.setSprite(spriteIndex);
@@ -126,7 +137,25 @@ else{
                 case IDLE : offset=0;
                     break;
                 case ATT : offset=5;
-                    if(spriteIndex==8){state=State.IDLE;}
+                    if(spriteIndex==8){
+                        state=State.IDLE;
+//                        Image bgImage2 = assets().getImage("images/x.png");
+//                        ImageLayer bgLayer2 = graphics().createImageLayer(bgImage2);
+//                        graphics().rootLayer().add(bgLayer2);
+//                        bgLayer2.setTranslation(500,400);
+
+//                        if(bulletType==BulletType.NONE){return;}
+//                        else if(bulletType==BulletType.BULLET1){
+//                            bullet1=new Bullet1();
+//                            imagelayer = bullet1.pic();
+//                            graphics().rootLayer().add(imagelayer);
+//                            body=bullet1.body();
+//                            imagelayer.setTranslation(0,0);
+//
+//                        }
+
+
+                    }
                     break;
             }
             //if(spriteIndex==11){spriteIndex=spriteIndex+0;}else{
@@ -136,9 +165,14 @@ else{
         //}
             e=0;
         }
-    }}
+    }
 
-    public void dying(int delta){
+//        if(bulletType==BulletType.NONE){return;}
+//        else if(bulletType==BulletType.BULLET1){
+//           // imagelayer.setTranslation(body.getPosition().x,body.getPosition().y);
+//          //  bullet1.update(delta);
+//        }
+
 
     }
 

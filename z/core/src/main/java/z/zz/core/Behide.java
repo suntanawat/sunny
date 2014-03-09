@@ -14,21 +14,21 @@ import javax.swing.*;
 /**
  * Created by all user on 28/1/2557.
  */
-public class Backgone extends UIScreen {
+public class Behide extends UIScreen {
+
     private Sprite sprite;
     private int spriteIndex=0;
     private boolean hasLoaded=false;
 
-    private int e=0,r=0;
 
-    public Backgone()
+
+    public Behide()
     {
-        sprite= SpriteLoader.getSprite("images/bg.json");
+        sprite= SpriteLoader.getSprite("images/bg2.json");
         sprite.addCallback(new Callback<Sprite>() {
             @Override
             public void onSuccess(Sprite result) {
                 sprite.setSprite(spriteIndex);
-                sprite.layer().setOrigin(sprite.width()/2f,sprite.height()/2f);
                 hasLoaded=true;
             }
             @Override
@@ -39,31 +39,36 @@ public class Backgone extends UIScreen {
         });
     }
 
+
+
     public ImageLayer layer(){
         return this.sprite.layer();
     }
 
 
+int e=0;
     public void update(int delta){
         if (!hasLoaded)return;
-        e+=delta;
 
+        e+=delta;
         if(e==3000){
             sprite.setSprite(0);
         }
-        if(e==3200){
+        if(e==3400){
             sprite.setSprite(1);
         }
-        if(e==3400){
+        if(e==3500){
             sprite.setSprite(2);
         }
-        if(e==3600){
+        if(e==4000){
             sprite.setSprite(1);
         }
-        if(e==3800){
+        if(e==4150){
             sprite.setSprite(0);
             e=0;
         }
+        }
 
-}
+
+
 }

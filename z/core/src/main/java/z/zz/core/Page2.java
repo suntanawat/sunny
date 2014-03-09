@@ -47,13 +47,17 @@ public class Page2 extends UIScreen {
     enum State{LEFT,FORWARD,RIGHT};
     State state =State.FORWARD;
 
+    public enum BulletType{BULLET1,BULLET2,BULLET3,NONE};
+    private BulletType bulletType = BulletType.NONE;
+
+    float  atktime=999;
     Body body;
     Body body2;
     Body nabody;
     public static float M_PER_PIXEL = 1/ 26.667f;
     private static int width = 24;
     private static int height = 18;
-    private World world;
+    public static World world;
     private World world2;
     private Boolean showDebugDraw=true;
     ImageLayer bgLayer2;
@@ -66,21 +70,32 @@ public class Page2 extends UIScreen {
         this.ss = ss;
     }
 
-    Seelot z =new Seelot(world,320f,40f);
-    Seelot z2 =new Seelot(world,500f,200f);
+    Seelot z =new Seelot(world,320f,55f);
+    Seelot z2 =new Seelot(world,0,0);
+    Behide b1=new Behide();
+    Bullet1 bullet1=new Bullet1();
+    Bullet2 bullet2=new Bullet2();
+    Bullet3 bullet3=new Bullet3();
+    Body bulletBody;
 
 
     @Override
     public void wasAdded() {
         super.wasAdded();
 
-        Image bgImage3 = assets().getImage("images/cellbg.png");
-        ImageLayer bgLayer3 = graphics().createImageLayer(bgImage3);
-        graphics().rootLayer().add(bgLayer3);
+
+//        layer.add(b1.layer());
+        graphics().rootLayer().add(b1.layer());
+
+
+//        Image bgImage3 = assets().getImage("images/cellbg.png");
+//        ImageLayer bgLayer3 = graphics().createImageLayer(bgImage3);
+//        graphics().rootLayer().add(bgLayer3);
 
         Image bgImage = assets().getImage("images/bg.png");
         ImageLayer bgLayer = graphics().createImageLayer(bgImage);
         graphics().rootLayer().add(bgLayer);
+
 
         Image bgImage2 = assets().getImage("images/x.png");
          bgLayer2 = graphics().createImageLayer(bgImage2);
@@ -92,10 +107,14 @@ public class Page2 extends UIScreen {
         graphics().rootLayer().add(bgLayer4);
 
 
-
+        graphics().rootLayer().add(bullet1.pic().setTranslation(150,150));
+        graphics().rootLayer().add(bullet2.pic().setTranslation(200,200));
+        graphics().rootLayer().add(bullet3.pic().setTranslation(250,250));
         layer.add(z.layer());
         layer.setTranslation(30,30);
         layer.add(z2.layer());
+
+
 
         Vec2 gravity2 = new Vec2(0.0f,0.0f);
         world2=new World(gravity2, true);
@@ -113,7 +132,7 @@ public class Page2 extends UIScreen {
         });
 
 
-        Vec2 gravity = new Vec2(0.0f,9.8f);
+        Vec2 gravity = new Vec2(0.0f,0.0f);
         world=new World(gravity, true);
         world.setWarmStarting(true);
         world.setAutoClearForces(true);
@@ -163,22 +182,22 @@ public class Page2 extends UIScreen {
 
         Body ground1 = world.createBody(new BodyDef());
         PolygonShape groundShape1 = new PolygonShape();
-        groundShape1.setAsEdge(new Vec2(0f,1),new Vec2(width,1));
+        groundShape1.setAsEdge(new Vec2(0f,0),new Vec2(width,0));
         ground1.createFixture(groundShape1,0.0f);
 
         Body ground2 = world.createBody(new BodyDef());
         PolygonShape groundShape2 = new PolygonShape();
-        groundShape2.setAsEdge(new Vec2(0f,height-1),new Vec2(width,height-1));
+        groundShape2.setAsEdge(new Vec2(0f,height),new Vec2(width,height));
         ground2.createFixture(groundShape2,0.0f);
 
         Body ground3 = world.createBody(new BodyDef());
         PolygonShape groundShape3 = new PolygonShape();
-        groundShape3.setAsEdge(new Vec2(1,0),new Vec2(1,height));
+        groundShape3.setAsEdge(new Vec2(0,0),new Vec2(0,height));
         ground3.createFixture(groundShape3,0.0f);
 
         Body ground4 = world.createBody(new BodyDef());
         PolygonShape groundShape4 = new PolygonShape();
-        groundShape4.setAsEdge(new Vec2(width-1,0),new Vec2(width-1,height));
+        groundShape4.setAsEdge(new Vec2(width,0),new Vec2(width,height));
         ground4.createFixture(groundShape4,0.0f);
 //====================================================================
         Body ground21 = world2.createBody(new BodyDef());
@@ -202,12 +221,12 @@ public class Page2 extends UIScreen {
         ground24.createFixture(groundShape24,0.0f);
 
 
-        body2=initPhysicsBody(world,16, Page2.M_PER_PIXEL);
+        body2=initPhysicsBody(world,16,5,0.2f,0.2f);
 
         bgLayer2.addListener(new Pointer.Adapter(){
             @Override
             public void onPointerEnd(Pointer.Event event) {
-                body2.applyLinearImpulse(new Vec2(100f, 30f), body2.getPosition());
+                body2.applyLinearImpulse(new Vec2(-50f, -100f), body2.getPosition());
             }
         });
 
@@ -224,8 +243,16 @@ public class Page2 extends UIScreen {
                         state =State.RIGHT;
                         break;
                     case SPACE:
+//                        world.clearForces();
+                        bulletBody.setLinearVelocity(new Vec2(0,0));
+                        bulletBody.setAngularVelocity(0);
+                        bulletBody.setTransform(new Vec2(12, 2), 0f);
                         z.atk();
+                        atktime=0;
+                        bulletType=BulletType.BULLET1;
+
                         break;
+
                 }
             }
 
@@ -247,11 +274,8 @@ public class Page2 extends UIScreen {
         int xline=n;
         n=(rand.nextInt(17)+1);
         int yline=n;
-        nabody=initPhysicsBody(world2,xline,yline);
-//        na = new Na(world, 25,10);
-//
-//        List<Na> nas= new ArrayList<Na>();
-//        nas.add();
+        nabody=initPhysicsBody(world2,xline,yline,0.2f,0.2f);
+        bulletBody=initPhysicsBody(world,12,2,0.4f,0.4f);
 
 
        for(int hh = 0;hh<100;hh++)
@@ -260,7 +284,7 @@ public class Page2 extends UIScreen {
              xline=n;
             n=(rand.nextInt(17)+1);
              yline=n;
-            bodys.add(initPhysicsBody(world2, xline, yline));
+            bodys.add(initPhysicsBody(world2, xline, yline,0.2f,0.2f));
 
             n=(rand.nextInt(23)+1);
             xline=n;
@@ -278,21 +302,21 @@ public class Page2 extends UIScreen {
     List<ImageLayer> nalayers=new ArrayList<ImageLayer>();
 
 
-    private Body initPhysicsBody(World world,float x ,float y){
+    private Body initPhysicsBody(World world,float x ,float y,float sizex ,float sizey){
         BodyDef bf = new BodyDef();
         bf.type = BodyType.DYNAMIC;
         bf.position=new Vec2(200f,200f);
         Body body = world.createBody(bf);
         //EdgeShape shape = new EdgeShape();
         PolygonShape shape = new PolygonShape();
-        shape.setAsBox(0.2f,0.2f);
+        shape.setAsBox(sizex,sizey);
         body.setFixedRotation(false);
 
         FixtureDef fixtureDef = new FixtureDef();
         fixtureDef.shape=shape;
         fixtureDef.density=8f;
         fixtureDef.friction=0.1f;
-        fixtureDef.restitution=50.2f;
+        fixtureDef.restitution=0.2f;
         body.createFixture(fixtureDef);
         body.setLinearDamping(0.2f);
         body.setTransform(new Vec2(x,y),0f);
@@ -305,6 +329,16 @@ public class Page2 extends UIScreen {
     Random rand = new Random();
     @Override
     public void update(int delta) {
+        b1.update(delta);
+        if(atktime<=800+delta){atktime=atktime+delta;}
+        if(atktime>800&&atktime<=800+delta&&bulletType!=BulletType.NONE){
+            float x=0,y=0;
+            float ii=i;
+            if(ii>=0){x=-i/1.575f;}else{x=-i/1.575f;}
+            y=1-(Math.abs(i)/1.575f);
+            bulletBody.applyLinearImpulse(new Vec2(50*x,50*y),bulletBody.getPosition());
+        }
+
         l=l+delta;
         if(l>4000){
             float n=(((rand.nextInt(200))-100)/300.0f);
@@ -337,15 +371,20 @@ public class Page2 extends UIScreen {
         world2.step(0.033f,10,10);
         z.update(delta);
         z2.update(delta);
+        bullet1.update(delta);
+        bullet2.update(delta);
+        bullet3.update(delta);
 
-        if(state==State.LEFT){ i=i+0.025f;}
-        else if(state==State.RIGHT){ i=i-0.025f;}
+        if(state==State.LEFT){ if(i<1.575)i=i+0.025f;}
+        else if(state==State.RIGHT){ if(i>-1.575)i=i-0.025f;}
         else{}
 
         rotate+=0.015;
 
+
+
+
     }
-    ImageLayer egg1;
 
     @Override
     public void paint(Clock clock) {
@@ -353,10 +392,10 @@ public class Page2 extends UIScreen {
         bgLayer4.setRotation(nabody.getAngle());
         bgLayer4.setRotation(rotate);
         z.paint(clock);
-        if(showDebugDraw){
-            debugDraw.getCanvas().clear();
-            world.drawDebugData();
-        }
+//        if(showDebugDraw){
+//            debugDraw.getCanvas().clear();
+//            world.drawDebugData();
+//        }
         z.layer().setRotation(i);
         //z.layer().setTranslation(body.getPosition().x/M_PER_PIXEL,body.getPosition().y/M_PER_PIXEL);
        z2.layer().setTranslation(body2.getPosition().x / M_PER_PIXEL, body2.getPosition().y / M_PER_PIXEL);
@@ -369,6 +408,24 @@ public class Page2 extends UIScreen {
             ImageLayer layerx = nalayers.get(i);
             layerx.setTranslation(bodyx.getPosition().x/M_PER_PIXEL,bodyx.getPosition().y/M_PER_PIXEL);
             layerx.setRotation(rotate);
+
+        }
+
+
+        switch (bulletType){
+            case BULLET1:
+                bullet1.pic().setTranslation(bulletBody.getPosition().x / M_PER_PIXEL, bulletBody.getPosition().y / M_PER_PIXEL);
+                break;
+            case BULLET2:
+                bullet2.pic().setTranslation(bulletBody.getPosition().x / M_PER_PIXEL, bulletBody.getPosition().y / M_PER_PIXEL);
+                break;
+            case BULLET3:
+                bullet3.pic().setTranslation(bulletBody.getPosition().x / M_PER_PIXEL, bulletBody.getPosition().y / M_PER_PIXEL);
+                break;
+            case NONE:
+                bulletBody.setTransform(new Vec2(12, 2), 0f);
+                bulletBody.setLinearVelocity(new Vec2(12, 2));
+                break;
 
         }
 
