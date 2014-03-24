@@ -1,0 +1,12 @@
+==Money==
+138
+==BulletType==
+2
+==Bullet1==
+true
+==Bullet2==
+true
+==Bullet3==
+true
+==STAGE==
+3

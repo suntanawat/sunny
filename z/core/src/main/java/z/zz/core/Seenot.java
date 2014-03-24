@@ -18,25 +18,29 @@ import static z.zz.core.Page2.world;
 /**
  * Created by all user on 28/1/2557.
  */
-public class Bullet1 extends UIScreen {
+public class Seenot extends UIScreen {
+    public int HP=100;
     private Sprite sprite;
     private int spriteIndex=0;
     private boolean hasLoaded=false;
 
     public enum State{IDLE,RUN,ATT};
     private State state = State.IDLE;
+    public enum BulletType{BULLET1,BULLET2,BULLET3,NONE};
+    private BulletType bulletType = BulletType.BULLET1;
     private int e=0,r=0;
     private int offset=0,check=0;
 
 
-    public Bullet1()
+    public Seenot(final float x, final float y)
     {
-        sprite= SpriteLoader.getSprite("images/bullet1.json");
+        sprite= SpriteLoader.getSprite("images/tp.json");
         sprite.addCallback(new Callback<Sprite>() {
             @Override
             public void onSuccess(Sprite result) {
                 sprite.setSprite(spriteIndex);
-                sprite.layer().setOrigin(sprite.width()/2f,sprite.height()/2f);
+                sprite.layer().setOrigin(sprite.width()/2f,sprite.height()/2f-5);
+                sprite.layer().setTranslation(x,y);
 
                 hasLoaded=true;
             }
@@ -48,17 +52,11 @@ public class Bullet1 extends UIScreen {
         });
 
 
-
     }
 
 
 
-
-    public void setSpriteIndexZERO(){
-        spriteIndex=-1;
-    }
-
-    public ImageLayer pic(){
+    public ImageLayer layer(){
         return this.sprite.layer();
     }
     public void setSpriteNumber(int n){
@@ -69,19 +67,23 @@ public class Bullet1 extends UIScreen {
     }
 
 
+    ImageLayer imagelayer;
 
     public void update(int delta){
         if (!hasLoaded)return;
         e+=delta;
-                if(e>90){
-                spriteIndex=offset+((spriteIndex+1)%6);
+            if(e>200){
+                spriteIndex=offset+((spriteIndex+1)%10);
                 sprite.setSprite(spriteIndex);
                 e=0;
-                }
-
             }
 
 
+
+
+
+    }
+
+
+
 }
-
-

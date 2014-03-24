@@ -72,6 +72,8 @@ public class Seelot extends UIScreen {
 
     }
 
+
+
     private Body initPhysicsBody(World world,float x ,float y){
         BodyDef bf = new BodyDef();
         bf.type = BodyType.DYNAMIC;

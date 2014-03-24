@@ -4,6 +4,7 @@ import org.jbox2d.callbacks.ContactImpulse;
 import org.jbox2d.callbacks.ContactListener;
 import org.jbox2d.callbacks.DebugDraw;
 import org.jbox2d.collision.Manifold;
+import org.jbox2d.collision.shapes.CircleShape;
 import org.jbox2d.collision.shapes.PolygonShape;
 import org.jbox2d.collision.shapes.Shape;
 import org.jbox2d.dynamics.*;
@@ -42,7 +43,7 @@ import java.util.Random;
 
 import static playn.core.PlayN.graphics;
 
-public class Page2 extends UIScreen {
+public class Page4 extends UIScreen {
 
     boolean checkDestroy=false;
     int diecount=0;
@@ -55,7 +56,7 @@ public class Page2 extends UIScreen {
     int console=0;
     float  atktime=999;
     Body body;
-   // Body body2;
+    // Body body2;
     Body nabody;
     public static float M_PER_PIXEL = 1/ 26.667f;
     private static int width = 24;
@@ -69,12 +70,12 @@ public class Page2 extends UIScreen {
 
     private Root root2;
     private ScreenStack ss = new ScreenStack();
-    public Page2(ScreenStack ss) {
+    public Page4(ScreenStack ss) {
         this.ss = ss;
     }
 
     Seelot z =new Seelot(world,320f,55f);
- //   Seelot z2 =new Seelot(world,0,0);
+    //   Seelot z2 =new Seelot(world,0,0);
     Behide b1=new Behide();
     Bullet1 bullet1=new Bullet1();
     Bullet2 bullet2=new Bullet2();
@@ -94,6 +95,9 @@ public class Page2 extends UIScreen {
     ImageLayer skillLayer1;
     ImageLayer skillLayer2;
     ImageLayer skillLayer3;
+    Body bossdy;
+    ImageLayer bossimg;
+    int bossHP=10;
 
 
 
@@ -123,7 +127,7 @@ public class Page2 extends UIScreen {
         graphics().rootLayer().add(bullet3.pic().setTranslation(999,250));
         layer.add(z.layer());
         layer.setTranslation(30,30);
-       // layer.add(z2.layer());
+        // layer.add(z2.layer());
 
 
 
@@ -131,7 +135,7 @@ public class Page2 extends UIScreen {
         world2=new World(gravity2, true);
         world2.setWarmStarting(true);
         world2.setAutoClearForces(true);
-        
+
 
 
 
@@ -152,15 +156,17 @@ public class Page2 extends UIScreen {
         world.setContactListener(new ContactListener() {
             @Override
             public void beginContact(Contact contact) {
-                if (contact.getFixtureA().getBody() == bulletBody||contact.getFixtureB().getBody() == bulletBody){
-                    checkDestroy=true;
-                }
 
+                if ((contact.getFixtureA().getBody() == bossdy&&contact.getFixtureB().getBody() == bulletBody)||
+                    (contact.getFixtureA().getBody() == bulletBody&&contact.getFixtureB().getBody() == bossdy)){
+                    checkDestroy=true;
+                    bossHP-=1;
+                }
 
                 for(int i=0;i<10;i++){
                     Body now=bodyEnemys.get(i);
                     if ((contact.getFixtureA().getBody() == now&&contact.getFixtureB().getBody() == bulletBody)||
-                        (contact.getFixtureA().getBody() == bulletBody&&contact.getFixtureB().getBody() == now)){
+                            (contact.getFixtureA().getBody() == bulletBody&&contact.getFixtureB().getBody() == now)){
 
                         checkDestroy=true;
 
@@ -172,7 +178,10 @@ public class Page2 extends UIScreen {
                         alparun=true;
                         System.out.println(i);
 
-                }}
+                    }}
+                if (contact.getFixtureA().getBody() == bulletBody||contact.getFixtureB().getBody() == bulletBody){
+                    checkDestroy=true;
+                }
 
 
             }
@@ -306,7 +315,7 @@ public class Page2 extends UIScreen {
                         state=State.FORWARD;
                         break;
                     case ENTER:
-                        if(console==-3){diecount=10;}
+                        if(console==-3){bossHP=0;}
                         else if(console!=0){console=0;}
                         break;
                     case W:
@@ -335,12 +344,12 @@ public class Page2 extends UIScreen {
 
 
 
-       for(int hh = 0;hh<100;hh++)
+        for(int hh = 0;hh<100;hh++)
         {
             n=(rand.nextInt(23)+1);
-             xline=n;
+            xline=n;
             n=(rand.nextInt(17)+1);
-             yline=n;
+            yline=n;
             bodys.add(initPhysicsBody(world2, xline, yline,0.2f,0.2f));
 
             n=(rand.nextInt(23)+1);
@@ -354,8 +363,8 @@ public class Page2 extends UIScreen {
 
 
 
-        for(int i=0;i<10;i++){
-            Enemy e1=new Enemy();
+        for(int i=0;i<30;i++){
+            Enemy2 e1=new Enemy2();
             bodyEnemys.add(initPhysicsBody(world, 12, 99,0.6f,0.6f));
             enemylayers.add(e1.enemyadd());
             int h=1;
@@ -382,13 +391,13 @@ public class Page2 extends UIScreen {
         loseLayer.setAlpha(0);
 
         Image skill1 = assets().getImage("images/skill1.png");
-         skillLayer1 = graphics().createImageLayer(skill1);
+        skillLayer1 = graphics().createImageLayer(skill1);
         graphics().rootLayer().add(skillLayer1);
         Image skill2 = assets().getImage("images/skill2.png");
-         skillLayer2 = graphics().createImageLayer(skill2);
+        skillLayer2 = graphics().createImageLayer(skill2);
         graphics().rootLayer().add(skillLayer2);
         Image skill3 = assets().getImage("images/skill3.png");
-         skillLayer3 = graphics().createImageLayer(skill3);
+        skillLayer3 = graphics().createImageLayer(skill3);
         graphics().rootLayer().add(skillLayer3);
         skillLayer1.setTranslation(408,25);
         skillLayer2.setTranslation(456,25);
@@ -405,14 +414,14 @@ public class Page2 extends UIScreen {
             @Override
             public void onPointerEnd(Pointer.Event event) {
                 hp=0;
-                }
-            });
+            }
+        });
         skillLayer3.addListener(new Pointer.Adapter(){
             @Override
             public void onPointerEnd(Pointer.Event event) {
-                    SaveStatic.money+=1;
-                }
-            });
+                SaveStatic.money+=1;
+            }
+        });
         Image hq = assets().getImage("images/hq.png");
         hqLayer = graphics().createImageLayer(hq);
         graphics().rootLayer().add(hqLayer);
@@ -422,8 +431,29 @@ public class Page2 extends UIScreen {
         graphics().rootLayer().add(pulse);
         pulse.setTranslation(0,-50);
 
+        Image boss = assets().getImage("images/boss.png");
+        bossimg = graphics().createImageLayer(boss);
+        graphics().rootLayer().add(bossimg);
+        bossimg.setOrigin(180,180);
+
+
+        BodyDef bd = new BodyDef();
+        bd.position.set(12, 17);
+        bd.type = BodyType.DYNAMIC;
+        CircleShape cs = new CircleShape();
+        cs.m_radius = 5f;
+        FixtureDef fd = new FixtureDef();
+        fd.shape = cs;
+        fd.density = 1.5f;
+        fd.friction = 0.3f;
+        fd.restitution = 0.5f;
+        bossdy =  world.createBody(bd);
+        bossdy.createFixture(fd);
+
+
 
     }catch (Exception e){System.out.println("!BAD!");}
+
 
     }
     List<Body> bodyEnemys=new ArrayList<Body>();
@@ -467,6 +497,7 @@ public class Page2 extends UIScreen {
     float enemyDelta=0;
     int enemyI=0;
     float pulseVec=0;
+    float bossDelta=0;
     @Override
     public void update(int delta) {
         try{
@@ -483,8 +514,8 @@ public class Page2 extends UIScreen {
         enemyDelta+=delta;
         if (enemyDelta>=3500 && enemyI<10){
             int x=(rand.nextInt(23)+1);
-            //int y=(rand.nextInt(1)+16);
-            bodyEnemys.get(enemyI).setTransform(new Vec2(x, 18), 0f);
+            int y=(rand.nextInt(6)+12);
+            bodyEnemys.get(enemyI).setTransform(new Vec2(x, y), 0f);
             bodyEnemys.get(enemyI).setLinearVelocity(new Vec2(0, 0));
 
             enemyI+=1;
@@ -496,8 +527,8 @@ public class Page2 extends UIScreen {
         if(alpacount>150){
             if(alpa>=0.5f)alpa=0.0f;
             else{alpa=0.8f;}
-            if(alparun==true&&alpaTimes<7){alpaTimes=alpaTimes+1;}
-            if(alpaTimes2<7){alpaTimes2=alpaTimes2+1;}
+            if(alparun==true&&alpaTimes<8){alpaTimes=alpaTimes+1;}
+            if(alpaTimes2<9){alpaTimes2=alpaTimes2+1;}
             alpacount=0.0f;
         }
         b1.update(delta);
@@ -508,7 +539,7 @@ public class Page2 extends UIScreen {
             if(ii>=0){x=-i/1.575f;}else{x=-i/1.575f;}
             y=1-(Math.abs(i)/1.575f);
             if(SaveStatic.bulletType== SaveStatic.BulletType.BULLET1){
-            bulletBody.applyLinearImpulse(new Vec2(20*x,20*y),bulletBody.getPosition());
+                bulletBody.applyLinearImpulse(new Vec2(20*x,20*y),bulletBody.getPosition());
             }
             else if(SaveStatic.bulletType== SaveStatic.BulletType.BULLET2){
                 bulletBody.applyLinearImpulse(new Vec2(60*x,60*y),bulletBody.getPosition());
@@ -538,14 +569,15 @@ public class Page2 extends UIScreen {
         }
         if(l>100){
             for (Body body : bodys) {
-            float n=(((rand.nextInt(200))-100)/1000.0f);
-            float x=n;
-            body.applyLinearImpulse(new Vec2(x,0),body.getPosition());
+                float n=(((rand.nextInt(200))-100)/1000.0f);
+                float x=n;
+                body.applyLinearImpulse(new Vec2(x,0),body.getPosition());
             }
 
             for(Body body:bodyEnemys){
-                float y=(rand.nextInt(100)/3000.0f);
-                float x=(((((body.getPosition().x)-12.0f)/12.0f)*-0.022f));
+                float y=(rand.nextInt(100)/1500.0f);
+                float x=(rand.nextInt(5)+3);
+                if(rand.nextInt(2)==0){x=-x;}
 
 
                 body.applyLinearImpulse(new Vec2(x,-(y)),body.getPosition());
@@ -556,9 +588,9 @@ public class Page2 extends UIScreen {
         }
         if(l>2100){
             for (Body body : bodys) {
-            float n=(((rand.nextInt(200))-100)/1000.0f);
-            float y=n;
-            body.applyLinearImpulse(new Vec2(0,y),body.getPosition());
+                float n=(((rand.nextInt(200))-100)/1000.0f);
+                float y=n;
+                body.applyLinearImpulse(new Vec2(0,y),body.getPosition());
             }
         }
 
@@ -578,14 +610,14 @@ public class Page2 extends UIScreen {
         if(isdamaged==true){
 
             hqLayer.setAlpha(alpa);
-            if(alpaTimes2>=6){
+            if(alpaTimes2>=8){
                 hqLayer.setAlpha(1);
                 isdamaged=false;
             }
         }
 
 
-    if(checkDestroy==true){bulletBody.setTransform(new Vec2(99, 99), 0f);} 
+        if(checkDestroy==true){bulletBody.setTransform(new Vec2(99, 99), 0f);}
         for (int i = 0; i < bodyEnemys.size(); i++) {
             Body bodyx = bodyEnemys.get(i);
             ImageLayer layerx = enemylayers.get(i);
@@ -609,7 +641,8 @@ public class Page2 extends UIScreen {
 
             }
         }
-        if(diecount>=10){
+        if(bossHP<=0){
+            bossimg.setAlpha(0);
             skillLayer1.setTranslation(999,25);
             skillLayer2.setTranslation(999,25);
             skillLayer3.setTranslation(999,25);
@@ -618,13 +651,13 @@ public class Page2 extends UIScreen {
             winLayer.setAlpha(win);
             win+=0.03f;
             if(win>6){
-                if (SaveStatic.stage<2){SaveStatic.stage=2;}
-
-            SaveStatic.save();
-            ss.remove(ss.top());
+                SaveStatic.save();
+                ss.remove(ss.top());
             }
         }
         if(hp<=0){
+
+            bossimg.setAlpha(0);
             skillLayer1.setTranslation(999,25);
             skillLayer2.setTranslation(999,25);
             skillLayer3.setTranslation(999,25);
@@ -668,22 +701,31 @@ public class Page2 extends UIScreen {
         for(int i=0;i<10;i++){
             Body now=bodyEnemys.get(i);
 
-                 float xx=now.getPosition().x;
-                 float yy=now.getPosition().y;
-                 if((xx>=9.0)&&(xx<=15.0)&&(yy>=0)&&(yy<=5)&&isdamaged==false){
-                     alpaTimes2=0;
-                     hp=hp-1;
-                     isdamaged=true;
-                     now.applyLinearImpulse(new Vec2(0,8),now.getPosition());
-                 }
-            if((xx>=0)&&(xx<=26)&&(yy>=0)&&(yy<=3)){
+            float xx=now.getPosition().x;
+            float yy=now.getPosition().y;
+            if((xx>=9.0)&&(xx<=15.0)&&(yy>=0)&&(yy<=5)&&isdamaged==false){
+                alpaTimes2=0;
+                hp=hp-1;
+                isdamaged=true;
                 now.applyLinearImpulse(new Vec2(0,8),now.getPosition());
+            }
+            if((xx>=0)&&(xx<=26)&&(yy>=0)&&(yy<=3)){
+                now.applyLinearImpulse(new Vec2(0,12),now.getPosition());
             }
         }
 
 
 
+        bossDelta+=delta;
+    if (bossDelta>2000){
+
+        float x=rand.nextInt(100);
+        x=x-50;
+        bossdy.applyLinearImpulse(new Vec2(x,-10),bossdy.getPosition());
+        bossDelta=0;
+    }
     }catch (Exception e){System.out.println("!BAD!");}
+
     }
 
 
@@ -700,8 +742,10 @@ public class Page2 extends UIScreen {
         }
         z.layer().setRotation(i);
         //z.layer().setTranslation(body.getPosition().x/M_PER_PIXEL,body.getPosition().y/M_PER_PIXEL);
-     //  z2.layer().setTranslation(body2.getPosition().x / M_PER_PIXEL, body2.getPosition().y / M_PER_PIXEL);
+        //  z2.layer().setTranslation(body2.getPosition().x / M_PER_PIXEL, body2.getPosition().y / M_PER_PIXEL);
         bgLayer4.setTranslation(nabody.getPosition().x/M_PER_PIXEL,nabody.getPosition().y/M_PER_PIXEL);
+        bossimg.setTranslation(bossdy.getPosition().x/M_PER_PIXEL,bossdy.getPosition().y/M_PER_PIXEL);
+        bossimg.setRotation(bossdy.getAngle());
 
 
 
@@ -715,8 +759,9 @@ public class Page2 extends UIScreen {
 
 
 
-
     }catch (Exception e){System.out.println("!BAD!");}
+
+
 
     }
 

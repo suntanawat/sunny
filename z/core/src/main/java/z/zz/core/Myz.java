@@ -38,7 +38,8 @@ public class Myz extends Game.Default {
             */
       final Screen home = new HomeScreen(ss);
       final Screen home2 = new Page2(ss);
-      ss.push(home);
+      final Screen well = new Welcome(ss);
+      ss.push(well);
 
 
   }

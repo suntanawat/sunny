@@ -69,58 +69,75 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="UpGrade.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/UpGrade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="50" column="30" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="4437">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Page2.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="426" column="62" selection-start="13790" selection-end="13790" vertical-scroll-proportion="1.7428571" vertical-offset="6069" max-vertical-offset="7531">
+            <state line="616" column="44" selection-start="20294" selection-end="20294" vertical-scroll-proportion="0.41230768" vertical-offset="9403" max-vertical-offset="11662">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#14320#14326#0" expanded="true" />
+                <element signature="e#14371#14380#0" expanded="true" />
+                <element signature="e#14481#14487#0" expanded="true" />
+                <element signature="e#14534#14546#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bullet1.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet1.java">
+      <file leaf-file-name="Page3.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="54" selection-start="810" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1275">
+            <state line="614" column="0" selection-start="20096" selection-end="20096" vertical-scroll-proportion="0.0" vertical-offset="9586" max-vertical-offset="11747">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bullet2.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet2.java">
+      <file leaf-file-name="Page4.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page4.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="54" selection-start="824" selection-end="831" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+            <state line="644" column="32" selection-start="21154" selection-end="21154" vertical-scroll-proportion="0.0" vertical-offset="10143" max-vertical-offset="12410">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Bullet3.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet3.java">
+      <file leaf-file-name="StageSelect.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/StageSelect.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="70" column="17" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+            <state line="75" column="30" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2329">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Seelot.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Seelot.java">
+      <file leaf-file-name="SaveStatic.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/SaveStatic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="697" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="476" max-vertical-offset="3179">
+            <state line="14" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Na.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Na.java">
+      <file leaf-file-name="Welcome.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Welcome.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="24" column="31" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="310" max-vertical-offset="918">
-              <folding />
+            <state line="72" column="22" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1717">
+              <folding>
+                <element signature="e#1425#1593#0" expanded="true" />
+                <element signature="e#1582#1583#0" expanded="true" />
+                <element signature="e#1635#1814#0" expanded="true" />
+                <element signature="e#1803#1804#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -142,17 +159,28 @@
         <option value="$PROJECT_DIR$/assets/src/main/resources/assets/images/tp.json" />
         <option value="$PROJECT_DIR$/core/pom.xml" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/DebugDrawBox2D.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Myz.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Background.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Backgone.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Na.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Behide.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Myz.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Seelot.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/seeAlot.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Enemy.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Number.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Seenot.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet1.java" />
-        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet2.java" />
         <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet3.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Enemy2.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Welcome.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/UpGrade.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/StageSelect.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/SaveStatic.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Page3.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java" />
+        <option value="$PROJECT_DIR$/core/src/main/java/z/zz/core/Page4.java" />
       </list>
     </option>
   </component>
@@ -175,9 +203,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1296" />
-    <option name="height" value="1000" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -267,6 +294,10 @@
               <option name="myItemId" value="zz" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sprite" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -330,6 +361,26 @@
       <option name="PROGRAM_PARAMETERS" />
       <method />
     </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <method />
+    </configuration>
     <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -352,32 +403,25 @@
       </MavenSettings>
       <method />
     </configuration>
-    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
-      <module name="" />
-      <option name="TESTING_TYPE" value="0" />
-      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
-      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
-      <option name="PREFERRED_AVD" value="" />
-      <option name="USE_COMMAND_LINE" value="true" />
-      <option name="COMMAND_LINE" value="" />
-      <option name="WIPE_USER_DATA" value="false" />
-      <option name="DISABLE_BOOT_ANIMATION" value="false" />
-      <option name="NETWORK_SPEED" value="full" />
-      <option name="NETWORK_LATENCY" value="none" />
-      <option name="CLEAR_LOGCAT" value="false" />
-      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -405,19 +449,6 @@
       <envs />
       <properties />
       <listeners />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -509,7 +540,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <frame x="-8" y="0" width="1382" height="744" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -519,21 +550,21 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19490586" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21010333" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32890365" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19375" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1102719" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1953125" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29082775" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22734138" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40813008" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3291536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -557,118 +588,14 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/SpriteImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/SpriteLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="34" selection-start="1842" selection-end="1851" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="3451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="28" selection-start="1231" selection-end="1231" vertical-scroll-proportion="0.0" vertical-offset="867" max-vertical-offset="1326">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/z/zz/java/MyzJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="348" selection-end="348" vertical-scroll-proportion="0.0" vertical-offset="221" max-vertical-offset="374" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Myz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="256" selection-end="258" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="1122">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Seelot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="26" selection-start="2253" selection-end="2253" vertical-scroll-proportion="0.0" vertical-offset="1564" max-vertical-offset="1904">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/SpriteImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/SpriteLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="34" selection-start="1842" selection-end="1851" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="3451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="13" selection-start="726" selection-end="726" vertical-scroll-proportion="0.0" vertical-offset="184" max-vertical-offset="1309">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/z/zz/java/MyzJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="374" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Myz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="9" selection-start="788" selection-end="788" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="1037">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Seelot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="81" column="9" selection-start="2036" selection-end="2036" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="1547">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/SpriteImage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="6" selection-start="716" selection-end="716" vertical-scroll-proportion="0.0" vertical-offset="374" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/SpriteLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="34" selection-start="1842" selection-end="1851" vertical-scroll-proportion="0.0" vertical-offset="935" max-vertical-offset="3451" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="850">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="409" max-vertical-offset="1309">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#14320#14326#0" expanded="true" />
+            <element signature="e#14371#14380#0" expanded="true" />
+            <element signature="e#14481#14487#0" expanded="true" />
+            <element signature="e#14534#14546#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -699,16 +626,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="47" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="16" column="47" selection-start="461" selection-end="461" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="455" max-vertical-offset="1309">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#14320#14326#0" expanded="true" />
+            <element signature="e#14371#14380#0" expanded="true" />
+            <element signature="e#14481#14487#0" expanded="true" />
+            <element signature="e#14534#14546#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -739,16 +667,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="38" column="39" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="38" column="39" selection-start="1171" selection-end="1171" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="35" column="0" selection-start="887" selection-end="887" vertical-scroll-proportion="0.0" vertical-offset="595" max-vertical-offset="1088">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#14320#14326#0" expanded="true" />
+            <element signature="e#14371#14380#0" expanded="true" />
+            <element signature="e#14481#14487#0" expanded="true" />
+            <element signature="e#14534#14546#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -762,16 +691,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="43" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850">
-          <folding />
-        </state>
+        <state line="31" column="43" selection-start="834" selection-end="834" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="850" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="240" selection-end="240" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="578">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#14320#14326#0" expanded="true" />
+            <element signature="e#14371#14380#0" expanded="true" />
+            <element signature="e#14481#14487#0" expanded="true" />
+            <element signature="e#14534#14546#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -805,11 +735,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/java/src/main/java/z/zz/java/MyzJava.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="25" selection-start="348" selection-end="348" vertical-scroll-proportion="0.2782324" vertical-offset="0" max-vertical-offset="611" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/DebugDrawBox2D.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="160" column="32" selection-start="4999" selection-end="4999" vertical-scroll-proportion="-0.28099173" vertical-offset="2720" max-vertical-offset="4862">
@@ -817,83 +742,187 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/Sprite.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="117" column="7" selection-start="3449" selection-end="3449" vertical-scroll-proportion="-0.039906103" vertical-offset="1632" max-vertical-offset="3179">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Myz.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1416" selection-end="1416" vertical-scroll-proportion="0.7605634" vertical-offset="628" max-vertical-offset="1054">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Behide.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="16" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.6013629" vertical-offset="599" max-vertical-offset="1207">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="753" selection-end="896" vertical-scroll-proportion="0.60855263" vertical-offset="4" max-vertical-offset="612">
-          <folding />
-        </state>
+        <state line="65" column="16" selection-start="1402" selection-end="1402" vertical-scroll-proportion="0.6013629" vertical-offset="599" max-vertical-offset="1207" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Backgone.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="1.2286184" vertical-offset="1" max-vertical-offset="1275">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
+        <state line="44" column="0" selection-start="1138" selection-end="1138" vertical-scroll-proportion="1.2286184" vertical-offset="1" max-vertical-offset="1275" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8.jar!/playn/core/Pointer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="20" selection-start="590" selection-end="590" vertical-scroll-proportion="0.4353147" vertical-offset="108" max-vertical-offset="1037" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-java/1.8/playn-java-1.8.jar!/playn/java/JavaPlatform.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="106" column="0" selection-start="3925" selection-end="3925" vertical-scroll-proportion="0.86538464" vertical-offset="1290" max-vertical-offset="1887" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/googlecode/playn/playn-core/1.8/playn-core-1.8.jar!/playn/core/PlayN.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1610" selection-end="1610" vertical-scroll-proportion="0.34845734" vertical-offset="573" max-vertical-offset="1173" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/HomeScreen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="4" selection-start="204" selection-end="204" vertical-scroll-proportion="-0.0033955858" vertical-offset="138" max-vertical-offset="748" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/lang/reflect/Method.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="605" column="0" selection-start="24861" selection-end="24861" vertical-scroll-proportion="0.33333334" vertical-offset="9350" max-vertical-offset="12631" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/collision/broadphase/BroadPhase.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="0" selection-start="2332" selection-end="2332" vertical-scroll-proportion="0.86585367" vertical-offset="251" max-vertical-offset="850" />
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jbox2d/jbox2d-library/2.1.2.3/jbox2d-library-2.1.2.3.jar!/org/jbox2d/dynamics/World.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="140" column="0" selection-start="6423" selection-end="6423" vertical-scroll-proportion="0.86585367" vertical-offset="1866" max-vertical-offset="2465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/java/src/main/java/z/zz/java/MyzJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="323" selection-end="323" vertical-scroll-proportion="0.25679758" vertical-offset="0" max-vertical-offset="662" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.7.0_45/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="634" column="0" selection-start="23203" selection-end="23203" vertical-scroll-proportion="0.3323263" vertical-offset="10167" max-vertical-offset="19635" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Seelot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="697" selection-end="810" vertical-scroll-proportion="0.0" vertical-offset="191" max-vertical-offset="3094">
+        <state line="103" column="5" selection-start="2757" selection-end="2757" vertical-scroll-proportion="0.62870514" vertical-offset="1042" max-vertical-offset="2907">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Na.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/sprite/Sprite.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="31" selection-start="566" selection-end="566" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="918">
-          <folding />
-        </state>
+        <state line="111" column="0" selection-start="3320" selection-end="3320" vertical-scroll-proportion="-0.29583976" vertical-offset="1705" max-vertical-offset="3179" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet1.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="54" selection-start="810" selection-end="817" vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="1275">
+        <state line="68" column="5" selection-start="1584" selection-end="1584" vertical-scroll-proportion="0.5716019" vertical-offset="464" max-vertical-offset="1360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="70" column="5" selection-start="1588" selection-end="1588" vertical-scroll-proportion="0.55266273" vertical-offset="502" max-vertical-offset="1377">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Seenot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="5" selection-start="1727" selection-end="1727" vertical-scroll-proportion="0.50177515" vertical-offset="477" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Number.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="0" selection-start="1079" selection-end="1145" vertical-scroll-proportion="0.8141994" vertical-offset="158" max-vertical-offset="1071">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="54" selection-start="824" selection-end="831" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1258">
+        <state line="43" column="5" selection-start="1166" selection-end="1166" vertical-scroll-proportion="-0.00755287" vertical-offset="515" max-vertical-offset="1360">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Bullet3.java">
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Myz.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="70" column="17" selection-start="1533" selection-end="1533" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
+        <state line="48" column="0" selection-start="1244" selection-end="1244" vertical-scroll-proportion="1.0256797" vertical-offset="52" max-vertical-offset="1071">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Enemy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="63" column="20" selection-start="0" selection-end="1412" vertical-scroll-proportion="1.2839879" vertical-offset="0" max-vertical-offset="1088">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Na.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="8" selection-start="1095" selection-end="1119" vertical-scroll-proportion="-0.106290676" vertical-offset="457" max-vertical-offset="918">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Enemy2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="63" selection-start="934" selection-end="934" vertical-scroll-proportion="-0.47939262" vertical-offset="595" max-vertical-offset="1139">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Welcome.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="72" column="22" selection-start="1849" selection-end="1849" vertical-scroll-proportion="0.0" vertical-offset="695" max-vertical-offset="1717">
+          <folding>
+            <element signature="e#1425#1593#0" expanded="true" />
+            <element signature="e#1582#1583#0" expanded="true" />
+            <element signature="e#1635#1814#0" expanded="true" />
+            <element signature="e#1803#1804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/UpGrade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="50" column="30" selection-start="1264" selection-end="1264" vertical-scroll-proportion="0.0" vertical-offset="100" max-vertical-offset="4437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/SaveStatic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2210">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/StageSelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="30" selection-start="2275" selection-end="2275" vertical-scroll-proportion="0.0" vertical-offset="918" max-vertical-offset="2329">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page4.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="644" column="32" selection-start="21154" selection-end="21154" vertical-scroll-proportion="0.0" vertical-offset="9888" max-vertical-offset="12410">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="614" column="0" selection-start="20096" selection-end="20096" vertical-scroll-proportion="0.0" vertical-offset="9382" max-vertical-offset="11747">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/core/src/main/java/z/zz/core/Page2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="426" column="62" selection-start="13790" selection-end="13790" vertical-scroll-proportion="1.7428571" vertical-offset="6069" max-vertical-offset="7531">
+        <state line="616" column="44" selection-start="20294" selection-end="20294" vertical-scroll-proportion="0.41230768" vertical-offset="9403" max-vertical-offset="11662">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#14320#14326#0" expanded="true" />
+            <element signature="e#14371#14380#0" expanded="true" />
+            <element signature="e#14481#14487#0" expanded="true" />
+            <element signature="e#14534#14546#0" expanded="true" />
           </folding>
         </state>
       </provider>

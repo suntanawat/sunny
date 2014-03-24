@@ -1,0 +1,12 @@
+==Money==
+3
+==BulletType==
+3
+==Bullet1==
+true
+==Bullet2==
+false
+==Bullet3==
+true
+==STAGE==
+3

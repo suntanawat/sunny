@@ -62,6 +62,12 @@ public class Bullet2 extends UIScreen {
     public Body body(){
         return this.body;
     }
+    public void setSpriteNumber(int n){
+        sprite.setSprite(n);
+    }
+    public void destroy(){
+        sprite.layer().destroy();
+    }
 
 
 
